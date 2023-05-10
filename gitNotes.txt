@@ -1,0 +1,30 @@
+git config user.name "mi_usuario"
+
+git config --local user.name "nombreLocal"
+git config --global user.name "nombredeusuarioglobal"
+git confog --local user.email "123456778+nombredeusuario@users.noreply.github.com"
+
+<!-- este alias esta en settings cuando pongo que mi mail sea privado -->
+git config user.name
+<!-- me muestra como es mi alias -->
+git config user.email
+
+<!-- para pasar untracked files a staging -->
+git add nombreDeArchivo
+git add . 
+
+para crear un template
+git config --local commit.template ~/.gitmessage
+me va a agregar una netrada en .git/config 
+algo asi:
+[commit]
+        template = /Users/uma/.gitmessage
+
+-
+despues tenes que ir a crear manualmente el archivo .gitmessage y armar el template como mas te guste
+
+cuando corras git commit el envabezado va a incluir ese template por is te gusta 
+-
+
+gh repo list 
+para ver todos los repositorios que tengo en mi cuenta de github
