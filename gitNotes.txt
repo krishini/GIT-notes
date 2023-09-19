@@ -1,3 +1,12 @@
+
+para ver con que usuario estoy logueado
+    git config user.name
+    git config user.email
+
+    para configurar el usuario
+    git config --global user.name lalala
+    git.config --global user.email testtest 
+
 git config user.name "mi_usuario"
 
 git config --local user.name "nombreLocal"
@@ -8,6 +17,51 @@ git confog --local user.email "123456778+nombredeusuario@users.noreply.github.co
 git config user.name
 <!-- me muestra como es mi alias -->
 git config user.email
+
+para usar git cli:
+gh auth login
+
+como crear un nuevo repositorio
+info en el repo de CLI cli.github.com/manual/gh_repo_create
+gh repo create nombredemirepositorio --private  
+
+>>    working directory 
+>>    staging aree
+>>    local repository
+
+git init > inicializa mi carpeta
+git status > para ver status
+git add filename.ext >>  para poner algo en staging area
+
+    git commit -m archivo.ext >>>> para subir el archivo a mi repositorio local
+    git commit -m "comentario"
+
+    git log  >> me muestra los cambios
+    git log --oneline >> version resumida
+
+    aca digo cual es la direccion remota 
+    git remote add origin https://github.com/krishini/pruebaremote.git
+
+    git remote -v
+    para asegurarme de que estoy apuntando al repositorio remoto correspondiente
+
+    
+    git push origin master >> para subir del local al remoto
+
+antes de subir al remoto, tengo que habr subido al local 
+
+git remote add origin (?)
+
+para abrir el repositorio en la pagina de github
+gh browse 
+
+git show -s
+
+para ver cosas: git log
+para ver cosas concretas:
+git log --oneline --author
+
+puedo crear un file .gitignore para definir que cosas git debe ignorar
 
 <!-- para pasar untracked files a staging -->
 git add nombreDeArchivo
@@ -32,7 +86,7 @@ para ver todos los repositorios que tengo en mi cuenta de github
 me clono un repo
 hago los ajustes que necesite
 git add
-git commit
+git commit [git commit -m "test" "lalala"]
 git push
 
 y eso es lo básico
